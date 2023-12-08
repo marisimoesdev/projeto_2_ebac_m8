@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./imagens/Icone-Telefone-removebg-preview.png" alt="Ícone de telefone">
+            <h1>Agenda de Contatos</h1>
+        </header>
+        <div class="cabecalho-tabela">
+            <h2>Adicionar contato</h2>
+            <form id="form-contato">
+                <p>Nome do contato</p>
+                <input type="text" id="nome-contato" required placeholder="Nome"/>
+                <p>Número do contato</p>
+                <input type="tel" id="num-contato" required placeholder="(xx) xxxxx-xxxx"/>
+                <label>Tipo de contato</label>
+                <select id="tipo-de-contato" required>
+                    <option ></option>
+                    <option value="Pessoal">Pessoal</option><!--atribui valor para esse item, para que fosse possível fazer a comparação na JavaScript-->
+                    <option value="Comercial">Comercial</option><!--atribui valor para esse item, para que fosse possível fazer a comparação na JavaScript-->
+                </select>
+                <button type="submit">Adicionar novo contato</button>
+            </form>
+            <h3>Seus contatos</h3>
+            <table class="tabela" cellspacing="0">
+                <!-- a propriedade cellspacing, é para tirar os pequenos espaços que ficam entre as colunas, esses espaços
+                não saem no css -->
+                <thead>
+                    <tr>
+                        <th>Nome do contato </th><!--1º coluna-->
+                        <th>Número do contato</th><!--2º coluna-->
+                        <th>Tipo de contato</th><!--3º coluna-->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!--<td>Nome do contato</td>--><!--1º coluna-->
+                        <!--<td>111111111</td>--><!--2º conluna-->
+                        <!--<td class="del"><img src="./imagens/lixeira.png" alt="logo de uma lixeira"></td>-->
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Número total de contatos:</td>
+                        <td></td>
+                        <td id="quant-contato">---</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
