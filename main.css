@@ -6,20 +6,20 @@
 
 .container{
     margin: 0 auto;
-    max-width: 1280px;
-    width: 100%;
+    max-width: 1280px; /*larguram máxima da página*/
+    width: 100%; /*largura máxima de ocupação*/
 }
 
 header{
-    display: flex;
-    align-items: center;
+    display: flex; /*itens do cabeçalho um do lado do outro*/
+    align-items: center; /*nivelando os itens*/
     padding: 8px;
     background-color: rgba(65, 42, 165, 0.445);
     font-family: 'Concert One', sans-serif;
-    font-weight: normal;
+    font-weight: normal; /*tirando o negrito que foi colocado automaticamente na fonte pelo navegador*/
 }
 
-header img{
+header img{ /*img da header*/
     height: 40px;
 }
 
@@ -28,8 +28,8 @@ header h1{
 }
 
 .cabecalho-tabela{
-    max-width: 960px;
-    width: 100%;
+    max-width: 960px; /*largura máxima da div, não da página*/
+    width: 100%; /*largura máxima de ocupação da div*/
     margin: 40px auto 0px auto;
 }
 
@@ -48,24 +48,24 @@ h3{
 }
 
 form {
-    display: flex;
-    align-items: center;
+    display: flex; /*colocando os iten do formulário um do lado do outro*/
+    align-items: center; /*nivelantdo os itens do formulário*/
     justify-content: space-between;
 }
 
-p, label{
+p, label{ /*tag parágrafo e tag label*/
     font-family: 'Concert One', sans-serif;;
 }
 
 input, button, select{
-    width: 120px;
-    height: 35px;
+    width: 120px; /*largura máxima dos itens*/
+    height: 35px; /*altura*/
     border: 1px solid black;
     padding: 8px;
     margin: 0px 10px 0px 3px;
 }
 
-input, select:focus{
+input, select:focus{ /*efeito no botão e no select (o retângulo que possui as opções)*/
     outline-color: blueviolet;
 }
 
@@ -74,33 +74,34 @@ button{
     background-color: rgba(65, 42, 165, 0.445);
     border: 1px solid blueviolet;
     width: 190px;
-    margin-right: 0;
+    margin-right: 0; /*retirando a margem da direita, para que assim ele fique grudado no canto direito da div, isso foi necessário 
+    pois lá em cima eu coloquei margem nos iten do formulário*/
 }
 
-button:hover{
+button:hover{ /*efeito do botão*/
     background-color: blueviolet;
 }
 
 table{
-    width: 100%;
+    width: 100%; /*largura máxima da ocupação da tabela, largura máxima de 960px, está na classe cabecalho-tabela */
 }
 
-table th,
-tfoot td{
+table th, /*cabeçalho da tabela*/
+tfoot td{ /*rodapé da tabela*/
     padding: 16px;
     font-family: 'Concert One', sans-serif;
     font-weight: normal;
     font-size: 24px;
     border-bottom: 2px solid black;
-    text-align: center;
+    text-align: center; /*nivelantdo os itens*/
 }
 
-tfoot td{
+tfoot td{ /*rodapé da tabela*/
     font-size: 20px;
     padding: 8px;
 }
 
-tbody td{
+tbody td{ /*corpo da tabela*/
     text-align: center;
     font-family: 'Roboto', sans-serif;
     border-bottom: 2px solid rgba(0, 0, 0, 0.384);
@@ -111,16 +112,16 @@ tfoot td{
     border-bottom: 2px solid black;
 }
 
-.pessoal, .comercial{
+.pessoal, .comercial{/*clase criada aqui, para ser usada do javascript, esse é a estilização da letras que aparecem na 3º coluna*/
     padding: 4px;
     background-color: rgba(224, 222, 55, 0.801);
     border: 2px solid rgba(255, 251, 0, 0.733);
-    border-radius: 5px;
-    font-weight: bold;
+    border-radius: 5px; /*arredondado as quinas da borda*/
+    font-weight: bold; /*adicionando negrito nas letras*/
     font-family: 'Concert One', sans-serif;
 }
 
-.comercial{
+.comercial{ /*clase criada aqui, para ser usada do javascript, esse é a estilização da letras que aparecem na 3º coluna*/
     background-color: rgba(143, 38, 38, 0.384);
     border: 2px solid rgba(143, 38, 38, 0.726);
 }
